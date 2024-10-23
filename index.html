@@ -1,219 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Website</title>
+    <link href="..\css\style.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Our Profile</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Message Us</a>
+        </div>
+    </nav>
 
-<!-- Home Carousel -->
-<div id="home-carousel" class="carousel carousel-home slide" data-ride="carousel" data-interval="5000">
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="active item">
-            <section class="site-section site-section-light site-section-top themed-background-default">
-                <div class="container">
-                    <h1 class="text-center animation-slideDown hidden-xs"><strong>MSA KARGO </strong></h1>
-                    <h2 class="text-center animation-slideUp push hidden-xs">Move Fast Move Safe</h2>
-                    <p class="text-center animation-fadeIn">
-                            <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo Image 1">
-                    </p>
+    <section class="welcome-section">
+        <h1 class="welcome-message">Hi <span id="welcomeName">Guest</span>, Welcome to Dragon Breath Hot Sauce Website</h1>
+    </section>
+
+    <section class="image-section">
+            <img src="https://preview.redd.it/ndm58ed176o21.jpg?width=640&crop=smart&auto=webp&s=e92e2157434693a91838ab306c4815524c0709cb">
+    </section>
+
+    <section class="welcome-section">
+        <h2 class="welcome-message">We Dragon Breath... Also Known Worldwide As Drago.Corp Have Produced Over 1 Million Bottles of Hot Sauce All Over The World, We Always Maintain Our Hot Sauce Quality To The Top Notch!  </h2>
+    </section>
+
+    <section class="welcome-section">
+        <h1 class="welcome-message">Vision</h1>
+        <h2 class="welcome-message">To Make A Better World Through The Love Of Hot Sauce</h2>
+        &nbsp;
+        <h1 class="welcome-message">Mission</h1>
+        <h2 class="welcome-message">To Deliver The Best Hot Sauce In The World To Any Part Of The World</h2>
+    </section>
+
+
+    <section class="headquarters">
+        <h2>Our Headquarter</h2>
+        <div class="cities">
+            <div class="city">
+                <div class="city-circle" style="background-image: url('https://www.asiaculturaltravel.co.uk/wp-content/uploads/2020/05/zhengzhou.jpeg')"></div>
+                <p>Zhengzhou</p>
+            </div>
+            <div class="city">
+                <div class="city-circle" style="background-image: url('https://smansasingaraja.sch.id/wp-content/uploads/2021/09/singapore-1-960x600-1.jpg')"></div>
+                <p>Singapore</p>
+            </div>
+            <div class="city">
+                <div class="city-circle" style="background-image: url('https://ikbis.ac.id/wp-content/uploads/2021/03/Anda-di-Surabaya-Inilah-Pentingnya-Menggunakan-Konsultan-Pajak-Surabaya.jpg')"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-container">
+            <div class="message-form">
+                <h2>Message Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Birth Date</label>
+                        <input type="date" name="tanggal" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="gender" value="Laki-laki" required> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Perempuan" required> Female
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="pesan" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            <div class="message-display">
+                <h3>Form Submission Details</h3>
+                <div class="display-field">
+                    <label>Name:</label>
+                    <span id="display-nama">-</span>
                 </div>
-            </section>
-        </div>
-        <div class="item">
-            <section class="site-section site-section-light site-section-top themed-background-fire">
-                <div class="container">
-                    <h1 class="text-center animation-fadeIn360 hidden-xs"><strong>Input Warehouse </strong></h1>
-                    <h2 class="text-center animation-fadeIn360 push hidden-xs">Click Untuk Input Data Warehouse Disini
-                    </h2>
-                    <p class="text-center animation-fadeInLeft">
-                    <a href="http://43.248.24.110/web_msakargo/frontend/ide_gudang.php">
-                            <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo Image 2">
-                        </a>
-                    </p>
+                <div class="display-field">
+                    <label>Birth Date:</label>
+                    <span id="display-tanggal">-</span>
                 </div>
-            </section>
-        </div>
-        <div class="item">
-            <section class="site-section site-section-light site-section-top themed-background-amethyst">
-                <div class="container">
-                    <h1 class="text-center animation-hatch hidden-xs"><strong>Input Konsolidator</strong></h1>
-                    <h2 class="text-center animation-hatch push hidden-xs">Click Untuk Input Data Konsolidator Disini</h2>
-                    <p class="text-center animation-hatch">
-                    <a href="http://43.248.24.110/web_msakargo/frontend/ide_konsolidator.php">
-                            <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo Image 3">
-                        </a>
-                    </p>
+                <div class="display-field">
+                    <label>Gender:</label>
+                    <span id="display-gender">-</span>
                 </div>
-            </section>
-        </div>
-        <div class="item">
-            <section class="site-section site-section-light site-section-top themed-background-modern">
-                <div class="container">
-                    <h1 class="text-center animation-fadeInLeft hidden-xs"><strong>Input Vessel
-                            </strong></h1>
-                    <h2 class="text-center animation-fadeInRight push hidden-xs">Click Untuk Input Data Vessel Disini
-                    </h2>
-                    <p class="text-center animation-fadeIn360">
-                    <a href="http://43.248.24.110/web_msakargo/frontend/ide_vessel.php">
-                            <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo Image 4">
-                        </a>
-                    </p>
-                </div>
-            </section>
-        </div>
-    </div>
-    <!-- END Wrapper for slides -->
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#home-carousel" data-slide="prev">
-        <span>
-            <i class="fa fa-chevron-left"></i>
-        </span>
-    </a>
-    <a class="right carousel-control" href="#home-carousel" data-slide="next">
-        <span>
-            <i class="fa fa-chevron-right"></i>
-        </span>
-    </a>
-    <!-- END Controls -->
-</div>
-<!-- END Home Carousel -->
-
-<!-- Action -->
-<!-- <section class="site-content site-section">
-    <div class="container">
-        <div class="site-block text-center">
-            <a href="http://43.248.24.110/web_msakargo/frontend/ide_gudang.php" class="btn btn-lg btn-primary"><i
-                    class="fa fa-share"></i> Warehouse</a>
-            <a href="http://43.248.24.110/web_msakargo/frontend/ide_konsolidator.php" class="btn btn-lg btn-primary"><i
-                    class="fa fa-share"></i> Konsolidator</a>
-            <a href="http://43.248.24.110/web_msakargo/frontend/ide_vessel.php" class="btn btn-lg btn-primary"><i
-                    class="fa fa-share"></i> Vessel</a>
-        </div>
-        <hr>
-    </div>
-</section> -->
-<!-- END Action -->
-
-<!-- Promo #1 -->
-<section class="site-content site-section site-slide-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <img src="img/placeholders/screenshots/promo_desktop_left.png" alt="Promo #1" class="img-responsive">
-            </div>
-            <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo"><strong>Tracking Management </strong> System</h3>
-                <p class="promo-content">Real Time Status Tracking Position <a href="features.php">Learn More..</a></p>
-            </div>
-        </div>
-        <hr>
-    </div>
-</section>
-<!-- END Promo #1 -->
-
-<!-- Promo #2 -->
-<section class="site-content site-section site-slide-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-5 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo"><strong>WMS</strong>Warehouse Management System</h3>
-                <p class="promo-content"> Integrated warehouse management system <a href="features.php">Learn More..</a>
-                </p>
-            </div>
-            <div class="col-sm-6 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <img src="img/placeholders/screenshots/promo_desktop_right.png" alt="Promo #2" class="img-responsive">
-            </div>
-        </div>
-        <hr>
-    </div>
-</section>
-<!-- END Promo #2 -->
-
-<!-- Promo #3 -->
-<section class="site-content site-section site-slide-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <img src="img/placeholders/screenshots/promo_tablet.png" alt="Promo #3" class="img-responsive">
-            </div>
-            <div class="col-sm-6 col-md-5 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo"><strong>Web Based</strong> Responsive</h3>
-                <p class="promo-content">Dengan tampilan dashboard report yang mudah di pahami dan flexible di semua
-                    jenis layar<a href="features.php">Learn More..</a></p>
-            </div>
-        </div>
-        <hr>
-    </div>
-</section>
-<!-- END Promo #3 -->
-
-<!-- Promo #4 -->
-<section class="site-content site-section site-slide-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-5 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInRight" data-element-offset="-180">
-                <h3 class="h2 site-heading site-heading-promo"><strong>Mobile</strong> Apps</h3>
-                <p class="promo-content">Real Time Status Updata Position by mobile apps <a href="features.php">Learn
-                        More..</a></p>
-            </div>
-            <div class="col-sm-6 col-md-offset-1 site-block visibility-none" data-toggle="animation-appear"
-                data-animation-class="animation-fadeInLeft" data-element-offset="-180">
-                <img src="img/placeholders/screenshots/promo_mobile.png" alt="Promo #4" class="img-responsive">
-            </div>
-        </div>
-        <hr>
-    </div>
-</section>
-<!-- END Promo #4 -->
-
-<!-- Testimonials -->
-<section class="site-content site-section">
-    <div class="container">
-        <!-- Testimonials Carousel -->
-        <div id="testimonials-carousel" class="carousel slide carousel-html" data-ride="carousel" data-interval="4000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-                <li data-target="#testimonials-carousel" data-slide-to="2"></li>
-            </ol>
-            <!-- END Indicators -->
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner text-center">
-                <div class="active item">
-                    <p>
-                        <img src="img/placeholders/avatars/avatar12.jpg" alt="Avatar" class="img-circle">
-                    </p>
-                    <blockquote class="no-symbol">
-                        <p>Highly recommended!</p>
-                        <footer><strong>Sophie Illich</strong>drfit.com</footer>
-                    </blockquote>
-                </div>
-                <div class="item">
-                    <p>
-                        <img src="img/placeholders/avatars/avatar7.jpg" alt="Avatar" class="img-circle">
-                    </p>
-                    <blockquote class="no-symbol">
-                        <p> product would look that good!</p>
-                        <footer><strong>David Cull</strong>cull.com</footer>
-                    </blockquote>
-                </div>
-                <div class="item">
-                    <p>
-                        <img src="img/placeholders/avatars/avatar9.jpg" alt="Avatar" class="img-circle">
-                    </p>
-                    <blockquote class="no-symbol">
-                        <p>An extraordinary service</p>
-                        <footer><strong>Nathan Brown</strong>nathan.com</footer>
-                    </blockquote>
+                <div class="display-field">
+                    <label>Message:</label>
+                    <span id="display-pesan">-</span>
                 </div>
             </div>
-            <!-- END Wrapper for slides -->
         </div>
-        <!-- END Testimonials Carousel -->
-    </div>
-</section>
+    </section>
+
+    <footer>
+        <p>Created By Fernando Delvecchio</p>
+    </footer>
+
+</body>
+<script src="..\js\script.js"></script>
+</html>
